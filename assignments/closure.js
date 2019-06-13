@@ -1,7 +1,20 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function myHouse() {
+    const boss = "Lisa";
+    console.log(`The ruler of this home is ${boss}`);
 
+    function computerRoom() {
+        console.log(`The ruler of this home is ${boss}`);
 
+        function kitchen() {
+            const boss = "John";
+            console.log(`The ruler of this room is ${boss}`);
+        }kitchen();
+    }computerRoom();
+}
+
+myHouse();
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
